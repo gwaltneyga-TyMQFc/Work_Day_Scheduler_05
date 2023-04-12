@@ -39,9 +39,9 @@ $(document).ready(function(){
   hour.textContent = dayjs(hour, "H" ).format("hA");
 
 
-  //Create the Description elemenet for event entry
+  //Create the Description element for event entry
 var Description = document.createElement("textarea");
-Description.classList.add("description");
+Description.classList.add(".description");
 
   //Create the save button
     var saveBtn = document.createElement("button");
@@ -49,7 +49,7 @@ Description.classList.add("description");
     saveBtn.textcontent = "Save";
 
     //Add the whole container to the DOM
-    timeEl.append(hour, description, saveButton);
+    timeEl.append(hour, Description, saveBtn);
 
     // Append the time block to the container
   $(".container").append(timeEl);
